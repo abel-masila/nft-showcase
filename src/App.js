@@ -3,9 +3,21 @@ import assets from './assets';
 import styles from './styles/Global';
 const App = () => {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+    <>
+      <SectionWrapper
+        title="You own store of Nifty NFTs. Start Selling & Growing"
+        description="Buy, store, collect NFTS, exchange & earn crypto. Join 25+ million people using ProNef Marketplace."
+        showBtn
+        mockupImg={assets.homeHero}
+        banner="banner"
+      />
+      <SectionWrapper
+        title="Smart User Interface Marketplace"
+        description="Experience a buttery UI of ProNef NFT Marketplace. Smooth constant colors of a fluent UI design."
+        mockupImg={assets.homeCards}
+        reverse
+      />
+    </>
   );
 };
 
