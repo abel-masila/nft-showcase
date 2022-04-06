@@ -4,14 +4,14 @@ import styles from '../styles/Global';
 import assets from '../assets';
 import Button from './Button';
 
-function SectionWrapper({
+const SectionWrapper = ({
   title,
   description,
   showBtn,
   mockupImg,
   banner,
   reverse,
-}) {
+}) => {
   return (
     <div
       className={`min-h-screen ${styles.section}
@@ -62,6 +62,6 @@ function SectionWrapper({
       </div>
     </div>
   );
-}
+};
 
 export default SectionWrapper;
